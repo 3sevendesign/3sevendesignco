@@ -162,9 +162,27 @@
 
       .page-header { padding: 7rem 1.5rem 3rem; }
       .work-section { padding: 2rem 1.5rem; }
-      .work-featured { height: 460px; }
       .work-row { grid-template-columns: 1fr !important; }
-      .work-card .work-bg { height: 420px; }
+
+      /* All cards: image on top, info bar below */
+      .work-featured,
+      .work-card,
+      .work-card.work-card--overlay { display: flex; flex-direction: column; height: auto !important; overflow: visible !important; margin-bottom: 2rem; }
+
+      .work-img { width: 100% !important; height: 240px !important; object-fit: cover !important; object-position: top !important; display: block !important; }
+
+      .work-featured .work-overlay,
+      .work-card--overlay .work-overlay { display: none !important; }
+
+      .work-featured .work-num,
+      .work-card--overlay .work-num { display: none !important; }
+
+      .work-featured .work-info,
+      .work-card .work-info,
+      .work-card.work-card--overlay .work-info { position: static !important; background: #111114 !important; border: none !important; border-top: 1px solid rgba(201,168,108,.1) !important; padding: .85rem 1rem !important; text-align: left !important; }
+
+      .work-tag { font-size: 9px !important; margin-bottom: .3rem; }
+      .work-title { font-size: 1.05rem !important; line-height: 1.3; }
       footer { padding: 2rem 1.5rem; flex-direction: column; align-items: flex-start; gap: 1rem; }
       .footer-links { flex-wrap: wrap; gap: 1rem; }
     }
