@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "3seveN",
+      "runtimeExecutable": "/usr/bin/ruby",
+      "runtimeArgs": ["-run", "-e", "httpd", "/Users/dame/Desktop/3seveN Design Claude Code", "-p", "3737"],
+      "port": 3737,
+      "autoPort": false
+    }
+  ]
+}
