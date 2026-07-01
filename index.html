@@ -772,6 +772,7 @@
     .mobile-menu-close:hover { opacity: 1; }
 
         @media (max-width: 1024px) {
+      .desktop-only { display: none !important; }
       nav { padding: 1.3rem 2rem; }
       .nav-links { display: none; }
       .nav-burger { display: flex; }
@@ -1141,6 +1142,17 @@
     <span class="sec-label">Selected Work</span>
     <h2 class="sec-title">Projects that prove the point.</h2>
     <p class="sec-sub">Every project is built from scratch. No templates. No shortcuts. Just work that earns attention.</p>
+  </div>
+
+  <!-- Row 1: TSAÔCAA (desktop only) -->
+  <div class="work-row desktop-only" style="grid-template-columns: 1fr;">
+    <div class="work-card">
+      <img src="img-tsaocaa.png" alt="TSAÔCAA" class="work-img">
+      <div class="work-info">
+        <div class="work-tag">Restaurant · Web Design</div>
+        <div class="work-title">TSAÔCAA</div>
+      </div>
+    </div>
   </div>
 
   <!-- Row 2: Green Energy + Cowboys -->

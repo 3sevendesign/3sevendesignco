@@ -160,6 +160,7 @@
       .mm-btn { background: var(--gold); color: var(--black); font-weight: 600; }
       .mm-btn-outline { background: transparent; border: 1px solid rgba(201,168,108,.4); color: var(--gold); }
 
+      .desktop-only { display: none !important; }
       .page-header { padding: 7rem 1.5rem 3rem; }
       .work-section { padding: 2rem 1.5rem; }
       .work-row { grid-template-columns: 1fr !important; }
@@ -169,7 +170,7 @@
       .work-card,
       .work-card.work-card--overlay { display: flex; flex-direction: column; height: auto !important; overflow: visible !important; margin-bottom: 2rem; }
 
-      .work-img { width: 100% !important; height: 240px !important; object-fit: cover !important; object-position: top !important; display: block !important; }
+      .work-img { width: 100% !important; height: auto !important; object-fit: unset !important; display: block !important; }
 
       .work-featured .work-overlay,
       .work-card--overlay .work-overlay { display: none !important; }
@@ -295,7 +296,7 @@
     </div>
   </div>
 
-  <div class="work-row" style="grid-template-columns: 1fr;">
+  <div class="work-row desktop-only" style="grid-template-columns: 1fr;">
     <div class="work-card work-card--overlay">
       <img src="img-kori.png" alt="Kori Korean BBQ" class="work-img">
       <div class="work-overlay"></div>
